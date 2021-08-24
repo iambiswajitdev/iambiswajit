@@ -15,7 +15,7 @@ const MyProject = () => {
       img: "../images/pro4.png",
     },
     {
-      img: "../images/pro2.png",
+      img: "../images/pro5.png",
     },
     {
       img: "../images/pro2.png",
