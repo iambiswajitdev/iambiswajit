@@ -7,11 +7,8 @@ const MyProject = () => {
       img: "../images/pro1.png",
     },
     {
-      img: "../images/pro3.png",
+      img: "../images/pro7.png",
     },
-    // {
-    //   img: "../images/pro2.png",
-    // },
     {
       img: "../images/pro4.png",
     },

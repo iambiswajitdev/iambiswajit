@@ -5,12 +5,15 @@ const ContactMe = () => {
   const socile = [
     {
       icon: <i class="fab fa-github"></i>,
+      link: "https://github.com/iambiswajitdev",
     },
     {
       icon: <i class="fab fa-linkedin"></i>,
+      link: "https://www.linkedin.com/in/biswajit-mondal-7543a4215/",
     },
     {
       icon: <i class="fab fa-instagram"></i>,
+      link: "https://www.instagram.com/biswajit0999/",
     },
   ];
   return (
@@ -19,12 +22,20 @@ const ContactMe = () => {
         <Row>
           <Col lg={12}>
             <h1 className="introHeding contact">contact me</h1>
-            <span className="contLoct">📧 mrbiswajitmondal24@gmail.com</span>
-            <span className="contLoct">📴 7908043895</span>
+            <span className="contLoct">
+              <a target="_blank" href="mailto:mrbiswajitmondal24@gmail.com">
+                📧 mrbiswajitmondal24@gmail.com
+              </a>
+            </span>
+            <span className="contLoct">
+              <a href="tel:7908043895">📴 7908043895</a>
+            </span>
             <ul>
               {socile.map((item, index) => (
                 <li className="mymedia" key={index}>
-                  {item.icon}
+                  <a target="_blank" href={item.link}>
+                    {item.icon}
+                  </a>
                 </li>
               ))}
             </ul>

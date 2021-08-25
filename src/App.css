@@ -121,14 +121,20 @@ li {
   margin: 3rem 0;
   text-align: center;
 }
-.contLoct {
+.contLoct a {
   display: inline-block;
   margin-right: 20px;
   font-size: 1rem;
   font-weight: 600;
   color: #e47f39;
 }
+.contLoct a:hover {
+  text-decoration: none;
+}
 .mymedia {
+  display: inline-block;
+}
+.mymedia a {
   display: inline-block;
   margin-right: 0.7rem;
   font-size: 35px;
@@ -142,7 +148,7 @@ li {
   border: 2px solid #3136de;
   transition: 0.3s;
 }
-.mymedia:hover {
+.mymedia a:hover {
   background: none;
   border: 2px solid #e89140;
   color: #e47f39;
@@ -186,6 +192,33 @@ li {
 .project_slide {
   width: 100%;
   height: 300px;
+  position: relative;
+}
+.carousel-item {
+  transition: 0.5s;
+  position: relative;
+}
+.overfolow {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s;
+  display: none;
+}
+.overfolow a {
+  color: #fff;
+  text-align: center;
+  margin-top: 7rem;
+  display: block;
+  font-size: 3rem;
+}
+.carousel-item:hover .overfolow {
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  display: block;
 }
 .sliderProject {
   background-color: #fff;
@@ -257,7 +290,7 @@ input:checked + .slider:before {
   background-color: #ffffff;
 }
 .darkMood {
-  background-color: black;
+  background-color: #111827;
 }
 .lightColor {
   color: #fff;
@@ -266,7 +299,7 @@ input:checked + .slider:before {
   color: #ffffff;
 }
 .darkMood .dynamic-txts li span::after {
-  background-color: black;
+  background-color: #111827;
 }
 .darkMood .myProjectSection p {
   color: #ffffff;
