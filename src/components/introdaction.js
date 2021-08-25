@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 
-const Introdaction = () => {
+const Introdaction = ({ darkMode }) => {
   return (
     <>
       <div className="introduceMe">
@@ -11,7 +11,7 @@ const Introdaction = () => {
               <h1 className="introHeding">
                 hello, i am biswajit. Welcome to my Portfolio 👋.
               </h1>
-              <p className="introDec">
+              <p className={darkMode ? "lightColor" : "introDec"}>
                 I'm from Kolkata, India. I want To improve as a Frontend
                 developer and also an industry professional. i am a Frontend
                 developer who specializes in utilizing React.js to create
