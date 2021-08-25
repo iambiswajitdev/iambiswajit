@@ -262,3 +262,15 @@ input:checked + .slider:before {
 .lightColor {
   color: #fff;
 }
+.darkMood .introDec {
+  color: #ffffff;
+}
+.darkMood .dynamic-txts li span::after {
+  background-color: black;
+}
+.darkMood .myProjectSection p {
+  color: #ffffff;
+}
+.darkMood .footerHeading {
+  color: #ffffff;
+}
