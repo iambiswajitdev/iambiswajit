@@ -8,7 +8,7 @@ const ProjectSlide = ({ projectList }) => {
           <Carousel.Item key={index}>
             <img className="project_slide" src={item.img} alt="First slide" />
             <div className="overfolow">
-              <a target="_blank" href={item.link}>
+              <a rel="noreferrer" target="_blank" href={item.link}>
                 <i class="fas fa-link"></i>
               </a>
             </div>

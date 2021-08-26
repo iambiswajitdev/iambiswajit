@@ -23,17 +23,23 @@ const ContactMe = () => {
           <Col lg={12}>
             <h1 className="introHeding contact">contact me</h1>
             <span className="contLoct">
-              <a target="_blank" href="mailto:mrbiswajitmondal24@gmail.com">
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="mailto:mrbiswajitmondal24@gmail.com"
+              >
                 📧 mrbiswajitmondal24@gmail.com
               </a>
             </span>
             <span className="contLoct">
-              <a href="tel:7908043895">📴 7908043895</a>
+              <a rel="noreferrer" href="tel:7908043895">
+                📴 7908043895
+              </a>
             </span>
             <ul>
               {socile.map((item, index) => (
                 <li className="mymedia" key={index}>
-                  <a target="_blank" href={item.link}>
+                  <a rel="noreferrer" target="_blank" href={item.link}>
                     {item.icon}
                   </a>
                 </li>
