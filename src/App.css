@@ -233,6 +233,7 @@ li {
   height: 26px;
   right: 0;
   top: 5px;
+  z-index: 111;
 }
 
 .switch input {
@@ -240,7 +241,10 @@ li {
   width: 0;
   height: 0;
 }
-
+.moodMoon {
+  width: 50%;
+  cursor: pointer;
+}
 .slider {
   position: absolute;
   cursor: pointer;
@@ -248,7 +252,7 @@ li {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #e4a217;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -306,4 +310,36 @@ input:checked + .slider:before {
 }
 .darkMood .footerHeading {
   color: #ffffff;
+}
+/* respocive query */
+@media only screen and (max-width: 900px) {
+  .dynamic-txts li {
+    font-size: 20px;
+  }
+  .logo img {
+    height: 180px;
+  }
+  .myName {
+    font-size: 27px;
+  }
+  .introduceMe {
+    margin-top: 0;
+  }
+  .introHeding {
+    margin-top: 0;
+  }
+  .mobileDesplay {
+    display: none;
+  }
+  .project_slide {
+    height: 160px;
+  }
+  .carousel-control-prev {
+    left: 28%;
+    top: 114%;
+  }
+  .carousel-control-next {
+    left: 50%;
+    top: 114%;
+  }
 }

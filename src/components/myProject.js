@@ -5,18 +5,23 @@ const MyProject = () => {
   const projectList = [
     {
       img: "../images/pro1.png",
+      link: "https://ourdailyfood.netlify.app/",
     },
     {
       img: "../images/pro7.png",
+      link: "https://myonlineshopping.netlify.app/",
     },
     {
       img: "../images/pro4.png",
+      link: "https://pizzabazaar.netlify.app/",
     },
     {
       img: "../images/pro5.png",
+      link: "https://github.com/iambiswajitdev/restaurant",
     },
     {
       img: "../images/pro6.png",
+      link: "https://myonlineshopping.netlify.app/",
     },
   ];
   return (
@@ -24,7 +29,11 @@ const MyProject = () => {
       <Container>
         <Row>
           <Col lg={5} xs={12}>
-            <img className="introImg m-top" src="../images/work.png" alt="" />
+            <img
+              className="introImg m-top mobileDesplay"
+              src="../images/work.png"
+              alt=""
+            />
           </Col>
           <Col lg={7} xs={12}>
             <h1 className="introHeding contact">my project</h1>
