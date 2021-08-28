@@ -6,22 +6,27 @@ const MyProject = () => {
     {
       img: "../images/pro1.png",
       link: "https://ourdailyfood.netlify.app/",
+      gitHub: "https://github.com/iambiswajitdev?tab=repositories",
     },
     {
       img: "../images/pro7.png",
       link: "https://myonlineshopping.netlify.app/",
+      gitHub: "https://github.com/iambiswajitdev/myshoping",
     },
     {
       img: "../images/pro4.png",
       link: "https://pizzabazaar.netlify.app/",
+      gitHub: "https://github.com/iambiswajitdev/pizza_lover",
     },
     {
       img: "../images/pro5.png",
       link: "https://github.com/iambiswajitdev/restaurant",
+      gitHub: "https://github.com/iambiswajitdev/restaurant",
     },
     {
       img: "../images/pro6.png",
       link: "https://myonlineshopping.netlify.app/",
+      gitHub: "https://github.com/iambiswajitdev/myshoping",
     },
   ];
   return (
@@ -45,13 +50,6 @@ const MyProject = () => {
               debugging
             </p>
             <ProjectSlide projectList={projectList} />
-            {/* {projectList.map((item, index) => (
-                <Col lg={4} xs={12}>
-                  <div className="workSampel" key={index}>
-                    <img src={item.img} alt="" />
-                  </div>
-                </Col>
-              ))} */}
           </Col>
         </Row>
       </Container>
